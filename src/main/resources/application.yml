@@ -1,0 +1,12 @@
+quarkus:
+  mailer:
+    host: ${AWS_SES_HOST}
+    port: 587
+    username: ${AWS_SES_USERNAME}
+    password: ${AWS_SES_PASSWORD}
+    start-tls: REQUIRED
+    login: REQUIRED
+    from: ${FROM_EMAIL_ADDRESS}
+    mock: true # When actually sending mail, set "false".
+  lambda:
+    handler: "main" # https://quarkus.io/guides/amazon-lambda#choose
