@@ -1,5 +1,5 @@
 {
-  "mailAddress": "someaddress@example.com",
+  "to": "someaddress@example.com",
   "subject": "Send Mail from Quarkus",
   "text": "This mail is send from Quarkus"
 }
